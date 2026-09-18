@@ -1,51 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-                <title>Home</title>
-                <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" href="styles/style.css">
-        </head>
-        <body>
-                <header>
-                        <h1 class="titile_text"><a href="./">Toshiki Nakamura</a></h1>
-                </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>timtam.dev — Welcome to my Personal Site</title>
+  <meta name="description" content="Personal site of Tonrl — Linux enthusiast, Arch user, Hyprland enjoyer, OSS advocate." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
 
-                <div class="body-content-root">
-                        <div class="place-holder-temp"
-                                <a></a>
-                        </div>
-                                <h2>Hi! I'm Toshiki!</h2>
-                        <p> H3llo and Welcom to my website! <br><br>
-                        This website is mean to share my interests and explore 
-                        the fascinating world of technology and software. As a student
-                        who are fascinated about FOSS,
-                        I enjoy diving into various tech topics and sharing my thoughts
-                        and experiences.<br>
-                        </P>
+  <!-- Nav -->
+  <nav>
+    <div class="container">
+      <span class="nav-logo">timtam.dev</span>
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#setup">setup</a></li>
+        <li><a href="#interests">interests</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-                        <div class="content-intro">
-                                <p>root@host [~] > pwd<br>
-                                /home/toshiki
-                        </div>
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <p class="hero-prompt">$ whoami</p>
+      <h1>H3llo, i'm <span>Tonrl</span></h1>
+      <p class="tagline">
+        Linux enthusiast. 
+      </p>
+      <div class="badge-row">
+        <span class="badge arch">Arch Linux</span>
+        <span class="badge hypr">Hyprland</span>
+        <span class="badge oss">FOSS</span>
+        <span class="badge home">Homelab</span>
+      </div>
+    </div>
+  </header>
 
-                </div>
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <p class="section-label">// about</p>
+      <h2>A bit about me</h2>
+      <p>
+        I'm a broke サラリーマン who spends way too much time configuring window managers and optimising local workflows.
+        Welcome to my Personal Site!
+      </p>
+    </div>
+  </section>
 
-                <footer>
-                        <div class="footer-content">
-                                <p class="copy_right">Copyright &copy; 2024-<span id="year"></span> Tonrl. Licensed under CC-BY-ND 4.0</p>
-                                <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
-                                <div class="contact">
-                                        <a href="https://github.com/tonrl"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" alt="Logo" class="github-link"></a>
-                                        <a href="https://gitlab.timtam.dev/tonrl"><img src="https://images.ctfassets.net/xz1dnu24egyd/3JZABhkTjUT76LCIclV7sH/17a92be9bce78c2adcc43e23aabb7ca1/gitlab-logo-500.svg" alt="Logo" class="github-link"></a>
-                                </div>
-                        </div>
-                </footer>
-        </body>
+  <!-- Setup -->
+  <section id="setup">
+    <div class="container">
+      <p class="section-label">// setup</p>
+      <h2>Daily driver</h2>
+      <p>
+      </p>
+
+      <div class="setup-block">
+        <div><span class="key">OS          </span> <span class="value">Arch Linux</span> </div>
+        <div><span class="key">WM          </span> <span class="value">Hyprland</span> <span class="val-p">(Wayland compositor, RIP X)</span></div>
+        <div><span class="key">Terminal          </span> <span class="value">Foot</span> </div>
+        <div><span class="key">Editor          </span> <span class="value">Neovim</span> <span class="val-p">(-- Haven't yet figured out how to exit yet :wq)</span></div>
+
+        <div><span class="key">Shell          </span> <span class="value">zsh</span> </div>
+      </div>
+
+      <p style="margin-top: 20px;">
+      </p>
+    </div>
+  </section>
+
+  <!-- Interests -->
+  <section id="interests">
+    <div class="container">
+      <p class="section-label">// interests</p>
+      <h2>What I'm into</h2>
+
+      <div class="card-grid">
+
+        <div class="card">
+          <div class="card-icon">🐧</div>
+          <h3>Gnu/Linux &amp; Systems</h3>
+          <p>Deep interest in how operating systems work; kernels, init systems, , and the glue that holds it all together. </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🖥️</div>
+          <h3>Ricing</h3>
+          <p>Hyprland, Waybar, custom themes. Still haven't switched to DWL because of a severe skill issue.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🏠</div>
+          <h3>Homelab</h3>
+          <p>Self-hosting services<br>If it can run at home, I'll try it.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🔓</div>
+          <h3>Open Source</h3>
+          <p>Open source is the default. Prefer libre tools, read the source, and give back where I can.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">⌨️</div>
+          <h3>Development</h3>
+          <p>Building tools, scripts, and software. Comfort across system languages, scripting.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📡</div>
+          <h3>Networking</h3>
+          <p>VLANs, firewalls, DNS, important stuff. Also, blocking all Apple domains out of spite.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label">// contact</p>
+      <h2>Get in touch</h2>
+      <p>
+      </p>
+      <div class="stack-list">
+        <span class="stack-item">timtam.dev</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+            <p class="copy_right">Copyright &copy; 2024-<span id="year"></span> Tonrl. Licensed under CC-BY-ND 4.0</p>
+            <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+            <div class="contact">
+                    <a href="https://github.com/tonrl"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="Logo" class="github-link"></a>
+                    <a href="https://codeberg.org/tonrl"><img src="https://codeberg.org/assets/img/svg/cb-logo-mono.svg" alt="Logo" class="github-link"></a>
+            </div>
+  </footer>
+
+</body>
 </html>
-
-
-
-
-
-
-
